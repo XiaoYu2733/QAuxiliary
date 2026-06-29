@@ -1169,6 +1169,13 @@ data object AIOMsgItem_initContentDescription : DexKitTarget.UsingDexKitBridge()
     }
 }
 
+data object MsgListUtil_createMsgItem : DexKitTarget.UsingStringVector() {
+    override val findMethod: Boolean = true
+    override val traitStringVectors = arrayOf(arrayOf("MsgListUtil", "[createMsgItemByType] err. msgType="))
+    override val declaringClass = "LMsgListUtil;"
+    override val filter = DexKitFilter.allowAll
+}
+
 data object Hd_HideChatPanelBtn_Method : DexKitTarget.UsingStringVector() {
     override val findMethod = true
     override val traitStringVectors = arrayOf(arrayOf("peerUid", "panelCallback"))

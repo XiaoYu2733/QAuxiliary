@@ -67,7 +67,7 @@ open class SettingsUiFragmentHostActivity : BaseActivity(), SimpleFlingIntercept
     @CallSuper
     override fun doOnEarlyCreate(savedInstanceState: Bundle?, isInitializing: Boolean) {
         super.doOnEarlyCreate(savedInstanceState, isInitializing)
-        setTheme(ModuleThemeManager.getCurrentStyleId())
+        setTheme(ModuleThemeManager.getCurrentThemeColorStyleId())
     }
 
     /**
